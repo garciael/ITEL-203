@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+         <style>
+           body{
+                background-color: black;
+                background-image: url('cutee.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            form{
+                padding-top: 70px;
+                padding-bottom: 70px;
+                padding-left: 60px;
+                padding-right: 60px;
+                border-radius: 10px;
+                background-color: rgba(248, 233, 217, 0.247) ;              
+            }
+            tr, td{
+                font-size: large;
+            }
+         </style>
+    </head>
+    <body>
+       <form>
+        <center><h1 style="color: goldenrod;font-size: 400%; margin-top: -30px;" ><b>Registration Form</b></h1></center>
+                <p style="color: blanchedalmond;">Please fill out the form carefully to register.</p>     
+        <center><table>
+            <tr>      
+              <td><label style="color: blanchedalmond;">Last Name:</label></td>
+              <td><input type="text" name="last" placeholder="Last name" required/></td>
+              <td><label style="color: blanchedalmond;">Email:</label></td>
+              <td><input type="email" name="email" id="email" placeholder="Email" required/></td>
+            </tr>
+            <tr>
+              <td><label style="color: blanchedalmond;">First Name:</label></td>
+              <td><input type="text" name="first" id="first" placeholder="First name" required/></td>  
+              <td><label style="color: blanchedalmond;">Age:</label></td>
+              <td><input type="number" name="age" id="age" placeholder="Age" required/></td>
+            </tr>
+            <tr>
+              <td><label style="color: blanchedalmond;">Middle Name:</label></td>
+              <td><input type="text" name="middle" id="middle" placeholder="Middle name" required/></td>
+              <td><label style="color: blanchedalmond;">Phone Number:</label></td>
+              <td><input type="tel" name="number" id="number" placeholder="Number" required/></td>
+            </tr>
+            <tr>
+                <td><label style="color: blanchedalmond;">Birthdate:</label></td>
+                <td><input type="date" name="Birthdate" id="Birthdate" required/></td>
+                <td><label style="color: blanchedalmond;">Address:</label></td>
+                <td><input type="text" name="Address" id="Address" placeholder="City, Province" required/></td>
+            </tr> 
+            <tr>
+                <td><label style="color: blanchedalmond;">Status:</label></td>
+                <td><select name="Status" id="single">
+                    <option value="Single">Single</option>
+                    <option value="Married">Maried</option>
+                </select></td><br>
+            </tr>
+            <tr>
+                <td><label style="color: blanchedalmond;">Gender:</label></td>
+                <td><label style="color: blanchedalmond;">Female</label>
+                <input type="radio" name="Gender" id="female"/>
+                <label style="color: blanchedalmond;">Male</label>
+                <input type="radio" name="Gender" id="male"/></td>
+            </tr>
+            <tr>
+                <td><label style="color: blanchedalmond;">Device(s):</label></td>
+                <td><label style="color: blanchedalmond;">Cellphone</label>
+                <input type="checkbox" name="Cellphone" id="Cellphone" required/>
+                <label style="color: blanchedalmond;">Laptop</label>
+                <input type="checkbox" name="Laptop" id="Laptop" required/>
+                <label style="color: blanchedalmond;">Tablet</label>
+                <input type="checkbox" name="Tablet" id="Tablet" required/></td>
+            </tr>
+            <tr>
+                <td><br><br><button style="margin-left: 270%; color: burlywood; background-color: transparent; border-color: goldenrod; font-size: larger;">SUBMIT</button></td>
+            </tr>
+        </center></table>
+      </form>
+    </body>
+</html>
